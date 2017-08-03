@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var swooshImg: UIImageView!
+    @IBOutlet weak var bgImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
