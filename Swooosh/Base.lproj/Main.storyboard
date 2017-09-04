@@ -133,6 +133,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mensBtnTapped:" destination="dPo-hG-U5V" eventType="touchUpInside" id="Adq-zo-LH9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-on-9Ip" customClass="BorderButton" customModule="Swooosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="75" width="374" height="50"/>
@@ -144,6 +147,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="womensBtnTapped:" destination="dPo-hG-U5V" eventType="touchUpInside" id="sAo-Or-Dos"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjP-m3-2Zn" customClass="BorderButton" customModule="Swooosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="150" width="374" height="50"/>
@@ -155,6 +161,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="coedBtnTapped:" destination="dPo-hG-U5V" eventType="touchUpInside" id="y4I-ij-XAb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -162,7 +171,7 @@
                                     <constraint firstItem="VjP-m3-2Zn" firstAttribute="height" secondItem="zM6-jq-G3H" secondAttribute="height" id="eOp-ZS-Td5"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT7-6E-zBh" customClass="BorderButton" customModule="Swooosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT7-6E-zBh" customClass="BorderButton" customModule="Swooosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="656" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.44400149830000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -210,6 +219,10 @@
                         <viewLayoutGuide key="safeArea" id="Nye-3b-AMa"/>
                     </view>
                     <connections>
+                        <outlet property="coedBtn" destination="VjP-m3-2Zn" id="goy-Ud-x9q"/>
+                        <outlet property="mensBtn" destination="zM6-jq-G3H" id="dtv-6c-teK"/>
+                        <outlet property="nextBtn" destination="rT7-6E-zBh" id="wzo-Wy-MLV"/>
+                        <outlet property="womensBtn" destination="uJ0-on-9Ip" id="hep-F9-Vav"/>
                         <segue destination="FUn-YS-zqv" kind="show" identifier="skillVCSegue" id="aw3-S9-ABi"/>
                     </connections>
                 </viewController>
