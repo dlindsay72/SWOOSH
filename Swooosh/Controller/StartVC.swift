@@ -10,9 +10,6 @@ import UIKit
 
 class StartVC: UIViewController {
     
-    @IBOutlet weak var swooshImg: UIImageView!
-    @IBOutlet weak var bgImg: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
