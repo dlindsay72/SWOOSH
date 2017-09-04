@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartVC.swift
 //  Swooosh
 //
 //  Created by Dan Lindsay on 2017-08-02.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartVC: UIViewController {
     
     @IBOutlet weak var swooshImg: UIImageView!
     @IBOutlet weak var bgImg: UIImageView!
